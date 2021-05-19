@@ -9,11 +9,12 @@ Although not confirmed by a complete test.
 
 step1:Modeling SDF model with "SDF Editor" 
 As you see image below, you just copy and paste "float sdf(vec3 p0){ .... }.
-And run as fllows:
 
 >python convSDF2.py
 
-And you get:
+step2:copy and paste output of above to head of "viewSDF2.frag".
+
+
 
 
 ![alt text](https://github.com/ultrahamlet/cnvSDF2/blob/main/heli.jpg?raw=true)
