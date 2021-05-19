@@ -1,0 +1,161 @@
+{
+	"primitives": [
+		[
+			"pEllipsoid",
+			"Vector3( 2, 2, 2 )"
+		],
+		[
+			"pEllipsoid",
+			"Vector3( 4, 1, 0.5 )"
+		],
+		[
+			"pEllipsoid",
+			"Vector3( 0.9, 0.9, 0.1 )"
+		],
+		[
+			"pEllipsoid",
+			"Vector3( 5, 0.1, 0.2 )"
+		],
+		[
+			"pEllipsoid",
+			"Vector3( 0.2, 0.1, 5 )"
+		],
+		[
+			"pEllipsoid",
+			"Vector3( 0.2, 2, 0.2 )"
+		],
+		[
+			"pEllipsoid",
+			"Vector3( 2, 0.6, 0.6 )"
+		],
+		[
+			"pEllipsoid",
+			"Vector3( 2, 0.6, 0.6 )"
+		]
+	],
+	"modifiers": [
+		[
+			"ref",
+			0
+		],
+		[
+			"mTranslation",
+			[
+				[
+					"mRotation",
+					[
+						[
+							"ref",
+							1
+						]
+					],
+					"Vector3( 0, 0, 15 )"
+				]
+			],
+			"Vector3( 3, 1, 0 )"
+		],
+		[
+			"mTranslation",
+			[
+				[
+					"mRotation",
+					[
+						[
+							"ref",
+							2
+						]
+					],
+					"Vector3( 0, 0, 0 )"
+				]
+			],
+			"Vector3( 7, 2, 0.3 )"
+		],
+		[
+			"mTranslation",
+			[
+				[
+					"mRotation",
+					[
+						[
+							"ref",
+							4
+						],
+						[
+							"ref",
+							3
+						]
+					],
+					"Vector3( 0, 90, 0 )"
+				]
+			],
+			"Vector3( 0, 2.6, 0 )"
+		],
+		[
+			"mTranslation",
+			[
+				[
+					"ref",
+					5
+				]
+			],
+			"Vector3( 0, 1.1, 0 )"
+		],
+		[
+			"mTranslation",
+			[
+				[
+					"ref",
+					6
+				]
+			],
+			"Vector3( 0, -0.9, 1.8 )"
+		],
+		[
+			"mTranslation",
+			[
+				[
+					"ref",
+					7
+				]
+			],
+			"Vector3( 0, -0.9, -1.8 )"
+		]
+	],
+	"operator_tree": [
+		"oUnion",
+		[
+			[
+				"ref",
+				0
+			],
+			[
+				"ref",
+				1
+			],
+			[
+				"ref",
+				2
+			],
+			[
+				"ref",
+				3
+			],
+			[
+				"ref",
+				4
+			],
+			[
+				"ref",
+				5
+			],
+			[
+				"ref",
+				6
+			],
+			[
+				"ref",
+				7
+			]
+		]
+	]
+}
