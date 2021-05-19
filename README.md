@@ -8,10 +8,11 @@ Although not confirmed by a complete test.
 Right now, "cnvSDF2" handle only ellipsoid SDF, but But soon there will be a version that can handle other SDF models
 
 
-step1:Modeling SDF model with "SDF Editor" 
+step1:Modeling SDF model with "SDF Editor" and output "sample.json"
 As you see image below, you just copy and paste "float sdf(vec3 p0){ .... }.
 
 >python convSDF2.py
+this will read "sample.json"
 
 step2:Copy and paste output of above to head of "viewSDF2.frag".
 
