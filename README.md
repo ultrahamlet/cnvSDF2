@@ -1,6 +1,6 @@
 # cnvSDF2
 
-cnvSDF2.py convert "SDF Editor". data to GLSL or Shadertoy code.
+cnvSDF2.py convert "SDF Editor" data to GLSL or Shadertoy code.
 
 "convSDF" is odler version, can not  handle the hierarchical structure of rotation and translation of 
 "cnvSDF2" handle only ellipsoid SDF, but in this version can output  hierarchical structure of rotation and translation of "SDF Editor".
