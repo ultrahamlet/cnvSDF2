@@ -5,10 +5,10 @@ It is a good SDF modeling tool.  But there are still few functions.
 
 **"cnvSDF2.py"** convert "SDF Editor"'s  output data to GLSL or Shadertoy code.
 
-"convSDF" https://github.com/ultrahamlet/convSDF is odler version, can not handle the hierarchical structure of rotation and translation of 
-"cnvSDF2" handle only ellipsoid SDF, but in this version can output hierarchical structure of rotation and translation of "SDF Editor".
-Although not confirmed by a complete test.
-Right now, "cnvSDF2" handle only ellipsoid SDF, but But soon there will be a version that can handle other SDF models
+"convSDF" https://github.com/ultrahamlet/convSDF is odler version, can not handle the hierarchical structure of rotation and translation.
+
+"cnvSDF2" handlecan hierarchical structure of rotation and translation of "SDF Editor".Although not confirmed by a complete test.
+Right now, "cnvSDF2" handle only ellipsoid and cube, but But soon there will be a version that can handle other SDF models
 
 **step1:** Modeling SDF model with "SDF Editor" and output "sample.json"
 As you see image below, you just copy and paste "float sdf(vec3 p0){ .... }.
