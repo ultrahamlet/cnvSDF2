@@ -30,6 +30,6 @@ Showing with shadertoy code, "viewSDF2.frag" .
 ![alt text](https://github.com/ultrahamlet/cnvSDF2/blob/main/shadertoy.png?raw=true)
 
 in terms of "viewSDF2.frag"
-I uploaded a version that turns the propeller.
+I uploaded a version that turns the rotor.
 http://dcf.jp/viewSDF2.html
 
