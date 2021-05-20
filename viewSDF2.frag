@@ -24,7 +24,27 @@ const float halfpi = 1.57079632679;
 const float twopi = 6.28318530718;
 
 
+
 #define LIGHT normalize(vec3(1.0, 1.0, 0.0))
+
+mat3 rotateMat(vec3 p, float angle, vec3 axis){
+    vec3 a = normalize(axis);
+    float s = sin(angle);
+    float c = cos(angle);
+    float r = 1.0 - c;
+    mat3 m = mat3(
+        a.x * a.x * r + c,
+        a.y * a.x * r + a.z * s,
+        a.z * a.x * r - a.y * s,
+        a.x * a.y * r - a.z * s,
+        a.y * a.y * r + c,
+        a.z * a.y * r + a.x * s,
+        a.x * a.z * r + a.y * s,
+        a.y * a.z * r - a.x * s,
+        a.z * a.z * r + c
+    );
+    return m;
+}
 
  vec3 mTranslation(vec3 inv_translation, vec3 p)
  {
@@ -128,7 +148,9 @@ float sdf(vec3 p0)
 	{
 		vec3 p1 = mTranslation(TrIn_8, p0);
 		{
-			vec3 p2 = mRotation(RoIn_9, p1);
+            mat3 mt = rotateMat(p1,iTime,vec3(0.,1.,0.));
+			//vec3 p2 = mRotation(RoIn_9, p1);
+            vec3 p2 = mRotation(mt, p1);
 			d4 = pEllipsoid(ElRa_10, p2);
 			d5 = pEllipsoid(ElRa_11, p2);
 		}
@@ -294,7 +316,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     {
         cameraOrigin.x = sin(iTime*0.25 + 2.0) * (6.0 + sin(iTime * 0.1));
         cameraOrigin.y = sin(iTime*0.3) - 0.5;
-        cameraOrigin.z = cos(iTime*0.25 + 2.0) * (6.0 + sin(iTime * 0.15)); 
+        cameraOrigin.z = cos(iTime*0.25 + 2.0) * (6.0 + sin(iTime * 0.15)) - 15.0; 
     }
     
     vec3 cameraTarget = vec3(0.0, 0.25, -1.0);
