@@ -52,7 +52,7 @@ def total(mf):
     if(len(mf) < 3):
         prm = 'primitive'
         spos = prim[pcount][1].replace('Vector3','vec3')
-       
+
         #print(">>> ",strm)
         if prim[pcount][0] == 'pEllipsoid':
             #prm = 'vec3 ElRa_' + str(gcount) + ' = ' + spos + ';'
@@ -68,7 +68,7 @@ def total(mf):
     modi2 = mf[1]
     #print('>>>>>>>>>>>>>>>>>>>>>>>>>> ',modi2)
     if mf[0] == 'mRotation':
-      
+
         rv = mf[2]     #totatuon value
         rt = 'mat3 RoIn_'+str(gcount)
         #
@@ -79,8 +79,8 @@ def total(mf):
         v0 = -float(u[0])
         v1 = -float(u[1])
         v2 = -float(u[2])
-        rot = rotate_x(v0)*rotate_z(v2)
-        #rot = rotate_x(v0)*rotate_y(v1)*rotate_y(v2)
+        #rot = rotate_x(v0)*rotate_z(v2)
+        rot = rotate_x(v0)*rotate_y(v1)*rotate_z(v2)
         e = np.linalg.inv(rot) #inverse matrix
         # output matrix
         strm = str(e)
@@ -98,7 +98,7 @@ def total(mf):
         #
         print(rt,'=', strm)
     if mf[0] == 'mTranslation':
-        
+
         spos = mf[len(mf)-1].replace('Vector3(','') 
         spos = spos.replace(')','')
         u = spos.split(',')
@@ -112,10 +112,10 @@ def total(mf):
         #spos =  mf[len(mf)-1].replace('Vector3','vec3') + ';'
         #print(rt,'=', spos)
     gcount += 1
-    
+
     for md in modi2:
        total(md)
-   
+
 
 # read json file
 f = open('sample.json', 'r')
