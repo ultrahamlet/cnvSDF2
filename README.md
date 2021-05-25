@@ -1,21 +1,22 @@
-# cnvSDF2
+# cnvSDF2.py
 
-### cnvSDF2.py bug fixed 21/05/24  
+### cnvSDF2.py    'rotation bug fixed 21/05/24'  
 ----------------------------------------------------------------------------------------------------------------------------------
 
-**jitech's "SDF Editor"**   https://joetech.itch.io/sdf-editor
-It is a very good tool for modeling SDF primitive.    
+**jitech's "SDF Editor"**   https://joetech.itch.io/sdf-editor  
+is a very good tool for modeling SDF primitives.    
 But there are still few functions.
 
 **"cnvSDF2.py"** convert SDF Editor's jason file to GLSL or Shadertoy code.
 
 **"cnvSDF2"** handle hierarchical structure of rotation and translation of "SDF Editor".  
 (Although not confirmed by a complete test.)  
-Right now, "cnvSDF2" handle only ellipsoid and cube, but soon there will be a version that can handle other SDF models
+Right now, "cnvSDF2" handle only ellipsoid and cube, but soon  
+there will be a version that can handle other SDF models, or you can 
+extend it by yourelf.
   
   
 **STEPS**  
-  
   
 **step1:** Modeling SDF model with "SDF Editor" and output "sample.json"  
 As you see image below, you just copy and paste "float sdf(vec3 p0){ .... }.
