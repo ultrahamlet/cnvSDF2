@@ -1,20 +1,23 @@
 # cnvSDF2
 
-### cnvSDF2.py bug fixed 21/05/24   rot = rotate_x(v0)*rotate_y(v1)*rotate_z(v2) -> rot = rotate_xyz(v0,v1,v2)
-
-### cnvSDF2.py bug fixed 21/05/21   rot = rotate_x(v0)*rotate_z(v2) -> rot = rotate_x(v0)*rotate_y(v1)*rotate_z(v2)
+### cnvSDF2.py bug fixed 21/05/24  
+----------------------------------------------------------------------------------------------------------------------------------
 
 **jitech's "SDF Editor"**   https://joetech.itch.io/sdf-editor
-It is a good SDF modeling tool.  But there are still few functions.
+It is a very good tool for modeling SDF primitive.    
+But there are still few functions.
 
-**"cnvSDF2.py"** convert "SDF Editor"'s  output data to GLSL or Shadertoy code.
+**"cnvSDF2.py"** convert SDF Editor's jason file to GLSL or Shadertoy code.
 
-"convSDF" https://github.com/ultrahamlet/convSDF is odler version, can not handle the hierarchical structure of rotation and translation.
-
-"cnvSDF2" handlecan hierarchical structure of rotation and translation of "SDF Editor".Although not confirmed by a complete test.
+**"cnvSDF2"** handle hierarchical structure of rotation and translation of "SDF Editor".  
+(Although not confirmed by a complete test.)  
 Right now, "cnvSDF2" handle only ellipsoid and cube, but soon there will be a version that can handle other SDF models
-
-**step1:** Modeling SDF model with "SDF Editor" and output "sample.json"
+  
+  
+**STEPS**  
+  
+  
+**step1:** Modeling SDF model with "SDF Editor" and output "sample.json"  
 As you see image below, you just copy and paste "float sdf(vec3 p0){ .... }.
 
 >python convSDF2.py
