@@ -7,7 +7,7 @@
 is a very good tool for modeling SDF primitives.    
 But there are still few functions.
 
-**"cnvSDF2.py"** convert SDF Editor's jason file to GLSL or Shadertoy code.
+**"cnvSDF2.py"** convert SDF Editor's json file to GLSL or Shadertoy code.
 
 **"cnvSDF2"** handle hierarchical structure of rotation and translation of "SDF Editor".  
 (Although not confirmed by a complete test.)  
