@@ -41,7 +41,6 @@ Showing with shadertoy code, "viewSDF2.frag" .
 
 in terms of "viewSDF2.frag"
 I uploaded a version that turns the rotor.  
-http://dcf.jp/viewSDF2.html  
-or  
+
 https://www.shadertoy.com/view/NtXGRH
 
